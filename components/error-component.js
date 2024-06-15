@@ -5,7 +5,7 @@ export default class ErrorComponent extends LitElement{
         super();
     }
 
-    connectedCallback(){
+    firstUpdated(){
         super.connectedCallback();
     }
 
@@ -55,7 +55,6 @@ export default class ErrorComponent extends LitElement{
     btnRegresar(_e){
         const pageError =document.querySelector('main-component').shadowRoot.getElementById('pageError');
         const pageLogin = document.querySelector('main-component').shadowRoot.getElementById('pageLogin');
-
         
         pageError.classList.remove('mostrar');
         pageLogin.classList.add('mostrar');
