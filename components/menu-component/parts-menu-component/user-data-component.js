@@ -1,15 +1,11 @@
 import { LitElement, css, html } from "lit";
-import ClockComponent from "./clock-component";
+import "./clock-component";
 
 export default class UserData extends LitElement{
     // nombre del usuario
     
     constructor(){
         super();
-    }
-
-    firstUpdated(){
-        super.connectedCallback();
     }
 
     static styles=css`
@@ -47,4 +43,4 @@ export default class UserData extends LitElement{
     }
 }
 
-customElements.define('show-clock', ClockComponent);
+customElements.define('user-data', UserData);

@@ -5,9 +5,6 @@ export default class PassComponent extends LitElement{
         super();
     }
 
-    connectedCallback(){
-        super.connectedCallback();
-    }
     render(){
         return html
         `
@@ -15,3 +12,4 @@ export default class PassComponent extends LitElement{
         `;
     }
 }
+customElements.define('pass-component', PassComponent);

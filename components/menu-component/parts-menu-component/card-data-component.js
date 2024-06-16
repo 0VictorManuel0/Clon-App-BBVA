@@ -5,10 +5,6 @@ export default class CardComponent extends LitElement{
         super();
     }
 
-    connectedCallback(){
-        super.connectedCallback();
-    }
-
     static styles= css
     `
         .container-card{
@@ -46,3 +42,4 @@ export default class CardComponent extends LitElement{
         return numeroRandom;
     }
 }
+customElements.define('card-bank', CardComponent);

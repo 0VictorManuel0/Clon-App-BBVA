@@ -6,9 +6,7 @@ export default class ButtonComponent extends LitElement{
     constructor(){
         super();
     }
-    connectedCallback(){
-        super.connectedCallback();
-    }
+
     render(){
         return html
         `
@@ -49,3 +47,4 @@ export default class ButtonComponent extends LitElement{
             }
     }
 }
+customElements.define('btn-enter', ButtonComponent);

@@ -5,10 +5,6 @@ export default class ErrorComponent extends LitElement{
         super();
     }
 
-    firstUpdated(){
-        super.connectedCallback();
-    }
-
     static styles=css
     `
         .content{
@@ -64,3 +60,4 @@ export default class ErrorComponent extends LitElement{
 
     }
 }
+customElements.define('error-component', ErrorComponent);

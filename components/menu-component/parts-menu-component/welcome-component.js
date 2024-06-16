@@ -5,10 +5,6 @@ export default class WelcomeComponent extends LitElement{
         super();
     }
 
-    connectedCallback(){
-        super.connectedCallback();
-    }
-
     static styles= css`
         .info{
             width: 90%;
@@ -31,3 +27,4 @@ export default class WelcomeComponent extends LitElement{
         `;
     }
 }
+customElements.define('welcome-component', WelcomeComponent);

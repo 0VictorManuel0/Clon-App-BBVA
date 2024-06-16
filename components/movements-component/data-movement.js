@@ -5,10 +5,6 @@ export default class DataMovements extends LitElement{
         super();
     }
 
-    connectedCallback(){
-        super.connectedCallback();
-    }
-
     static styles = css
     `
         .move-cont{
@@ -59,3 +55,4 @@ export default class DataMovements extends LitElement{
         pageMenu.classList.add('mostrar');
     }
 }
+customElements.define('movements-data', DataMovements);

@@ -5,10 +5,6 @@ export default class BankData extends LitElement{
         super();
     }
 
-    connectedCallback(){
-        super.connectedCallback();
-    }
-
     static styles=css`
         .data-bank-card{
             width: 80%;
@@ -39,3 +35,4 @@ export default class BankData extends LitElement{
     }
 
 }
+customElements.define('bank-data', BankData);

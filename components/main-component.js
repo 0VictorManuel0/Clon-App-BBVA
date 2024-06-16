@@ -1,8 +1,8 @@
 import { LitElement, css, html } from "lit";
-import LoginComponent from "./login-component/login-component";
-import MenuComponent from "./menu-component/menu-component";
-import DataMovements from "./movements-component/data-movement";
-import ErrorComponent from "./error-component";
+import "./login-component/login-component";
+import "./menu-component/menu-component";
+import "./movements-component/data-movement";
+import "./error-component";
 
 export default class MainComponent extends LitElement{
     constructor(){
@@ -48,9 +48,6 @@ export default class MainComponent extends LitElement{
             display:block;
         }
     `;
-    connectedCallback(){
-        super.connectedCallback();
-    }
 
     render(){
         return html 
@@ -70,8 +67,3 @@ export default class MainComponent extends LitElement{
         `;
     }
 }
-
-customElements.define('login-component', LoginComponent);
-customElements.define('menu-component', MenuComponent);
-customElements.define('movements-data', DataMovements);
-customElements.define('error-component', ErrorComponent);

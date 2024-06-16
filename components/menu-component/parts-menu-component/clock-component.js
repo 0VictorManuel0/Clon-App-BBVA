@@ -29,3 +29,5 @@ export default class ClockComponent extends LitElement{
             return `${date.getHours().toString().padStart(2,0)}:${date.getMinutes().toString().padStart(2,0)}`;
     }
 }
+
+customElements.define('show-clock', ClockComponent);

@@ -5,10 +5,6 @@ export default class MovimientosComponent extends LitElement{
         super();
     }
 
-    connectedCallback(){
-        super.connectedCallback();
-    }
-
     static styles=css
     `
         .container-mov{
@@ -44,3 +40,4 @@ export default class MovimientosComponent extends LitElement{
         pageMovimiento.classList.add('mostrar');
     }
 }
+customElements.define('movimientos-component', MovimientosComponent)

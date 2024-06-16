@@ -1,18 +1,14 @@
 import { LitElement, css, html } from "lit";
-import UserData from "./parts-menu-component/user-data-component";
-import WelcomeComponent from "./parts-menu-component/welcome-component";
-import BankData from "./parts-menu-component/bank-data";
-import CardComponent from "./parts-menu-component/card-data-component";
-import MovimientosComponent from "./parts-menu-component/movimientos-component";
+import "./parts-menu-component/user-data-component";
+import "./parts-menu-component/welcome-component";
+import "./parts-menu-component/bank-data";
+import "./parts-menu-component/card-data-component";
+import "./parts-menu-component/movimientos-component";
 
 export default class MenuComponent extends LitElement{
 
     constructor(){
         super();
-    }
-
-    connectedCallback(){
-        super.connectedCallback();
     }
 
     static styles = css`
@@ -90,15 +86,9 @@ export default class MenuComponent extends LitElement{
         pageMenu.classList.remove('mostrar');
         pageLogin.classList.add('mostrar');
 
-
-
         document.querySelector('main-component').shadowRoot.querySelector('login-component').shadowRoot.querySelector('user-component').shadowRoot.getElementById('inputUserName').value='';
         document.querySelector('main-component').shadowRoot.querySelector('login-component').shadowRoot.querySelector('pass-component').shadowRoot.getElementById('inputUserPass').value='';
     }
 }
 
-customElements.define('user-data', UserData);
-customElements.define('welcome-component', WelcomeComponent);
-customElements.define('bank-data', BankData);
-customElements.define('card-bank', CardComponent);
-customElements.define('movimientos-component', MovimientosComponent)
+customElements.define('menu-component', MenuComponent);

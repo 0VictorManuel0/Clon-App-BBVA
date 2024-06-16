@@ -6,9 +6,6 @@ export default class UserComponent extends LitElement{
         
     }
     
-    connectedCallback(){
-        super.connectedCallback();
-    }
     render(){
         return html
         `
@@ -17,3 +14,4 @@ export default class UserComponent extends LitElement{
     }
 
 }
+customElements.define('user-component', UserComponent);

@@ -1,7 +1,7 @@
 import { LitElement, css, html } from "lit";
-import UserComponent from "./parts-component/username-component";
-import PassComponent from "./parts-component/password-component";
-import ButtonComponent from "./parts-component/button-component";
+import "./parts-component/username-component";
+import "./parts-component/password-component";
+import "./parts-component/button-component";
 
 export default class LoginComponent extends LitElement{
     
@@ -30,9 +30,6 @@ export default class LoginComponent extends LitElement{
         super();
     }
 
-    connectedCallback(){
-        super.connectedCallback();
-    }
 
     static styles = css`
         .data{
@@ -78,6 +75,4 @@ export default class LoginComponent extends LitElement{
 
 }
 
-customElements.define('user-component', UserComponent);
-customElements.define('pass-component', PassComponent);
-customElements.define('btn-enter', ButtonComponent);
+customElements.define('login-component', LoginComponent);
